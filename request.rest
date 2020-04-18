@@ -1,0 +1,97 @@
+### Check Server Status
+GET http://localhost:5000/api
+
+
+### Get all users
+GET http://localhost:5000/api/users
+x-api-key: 
+
+
+### Sign Up
+POST http://localhost:5000/api/signup
+Content-Type: application/json
+
+{
+    "name": "Ekansh Jain",
+    "email": "ejekanshjain@gmail.com",
+    "gender": "male",
+    "dateOfBirth": "1999-04-20",
+    "password": "password"
+}
+
+
+### Sign In
+POST http://localhost:5000/api/signin
+Content-Type: application/json
+
+{
+    "email": "ejekanshjain@gmail.com",
+    "password": "password"
+}
+
+
+### Get Profile
+GET http://localhost:5000/api/profile
+Authorization: 
+
+
+### Update Profile
+PATCH http://localhost:5000/api/profile
+Authorization: 
+Content-Type: application/json
+
+{
+    "name": "Ekansh Jain",
+    "email": "ejekanshjain@gmail.com",
+    "gender": "male",
+    "dateOfBirth": "1999-04-20"
+}
+
+
+### Change Password
+PATCH http://localhost:5000/api/changepassword
+Authorization: 
+Content-Type: application/json
+
+{
+    "currentPassword": "password",
+    "newPassword": "password"
+}
+
+
+### Save a password
+POST http://localhost:5000/api/passwords
+Authorization: 
+Content-Type: application/json
+
+{
+    "name": "Instagram",
+    "username": "ejekanshjain",
+    "pass": "password"
+}
+
+
+### Get all saved passwords
+GET http://localhost:5000/api/passwords
+Authorization: 
+
+
+### Update a saved password
+PATCH http://localhost:5000/api/passwords
+Authorization: 
+Content-Type: application/json
+
+{
+    "_id": "5e99a6a69177402ebc6b158f",
+    "name": "Instagram",
+    "username": "ejekanshjain",
+    "pass": "password"
+}
+
+
+### Delete a saved password
+DELETE http://localhost:5000/api/passwords/5e99a6a69177402ebc6b158f
+Authorization: 
+
+
+###

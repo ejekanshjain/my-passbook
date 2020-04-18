@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Passbook | Profile</title>
+
+    <!-- CSS Imports -->
+    <!-- Materialize -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="" class="brand-logo">My Passbook</a>
+                <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="material-icons right">home</i>Home</a></li>
+                    <li class="active"><a href="profile.html"><i class="material-icons right">person</i>Profile</a></li>
+                    <li><a href="about.html"><i class="material-icons right">info</i>About</a></li>
+                    <li><a href="#logoutModal1" class="modal-trigger">
+                            <i class="material-icons right">power_settings_new</i>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html"><i class="material-icons right">home</i>Home</a></li>
+            <li class="active"><a href="profile.html"><i class="material-icons right">person</i>Profile</a></li>
+            <li><a href="about.html"><i class="material-icons right">info</i>About</a></li>
+            <li><a href="#logoutModal2" class="modal-trigger">
+                    <i class="material-icons right">power_settings_new</i>
+                    Log Out
+                </a>
+            </li>
+        </ul>
+        <div id="logoutModal1" class="modal">
+            <div class="modal-content">
+                <h4 class="purple-text">Log Out</h4>
+                <p>Are you Sure?</p>
+            </div>
+            <div class="modal-footer">
+                <a class="red-text modal-close waves-effect waves-red btn-flat">Nope</a>
+                <a href="signin.html" class="green-text modal-close waves-effect waves-green btn-flat">Yep</a>
+            </div>
+        </div>
+        <div id="logoutModal2" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="purple-text">Log Out</h4>
+                <p>Are you Sure?</p>
+            </div>
+            <div class="modal-footer">
+                <a class="red-text modal-close waves-effect waves-red btn-flat">Nope</a>
+                <a href="signin.html" class="green-text modal-close waves-effect waves-green btn-flat">Yep</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="profile">
+            <h5 class="red-text text-darken-3">My Profile</h5>
+            <div class="row">
+                <form class="col s12 m10 l8 offset-m1 offset-l2">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" name="name" id="name" value="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="email" name="email" id="email" value="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12 m6 gender-select">
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input type="text" name="dateOfBirth" id="dateOfBirth" class="datepicker" value="1999-04-20"
+                                required>
+                            <label for="dateOfBirth">Date of Birth</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="waves-effect waves-light btn blue">
+                        <i class="material-icons right">send</i>
+                        Update Profile
+                    </button>
+                    <div class="row center-align last-updated">
+                    </div>
+                    <a href="changePassword.html">Change Password</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Imports -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Materialize -->
+    <script src="js/materialize.js"></script>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <!-- Profile -->
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
